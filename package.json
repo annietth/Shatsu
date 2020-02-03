@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "For the end of first semester project.  We create a site that highlights the Landing page with students at Hetic. There is  Tania ABITBOL Theo ROUGIER Kayse SULEJMAN Guilhem BOZZI Annie TRAN",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annietth/Shatsu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annietth/Shatsu/issues"
+  },
+  "homepage": "https://github.com/annietth/Shatsu#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  }
+}
