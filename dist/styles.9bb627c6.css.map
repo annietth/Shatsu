@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/styles.scss"],"names":[],"mappings":"AAAA,QACI,qBACA,eACI,cAAA,CACA","file":"styles.9bb627c6.css","sourceRoot":"../src","sourcesContent":[".header{\n    background-color: red;\n    .title {\n        font-size: 40px;\n        text-align: center;\n        \n    }\n    \n}"]}
