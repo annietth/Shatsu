@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel/src/builtins/bundle-url.js"}],"scss/styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/tania/Shatsu/src/img/backproduct.png":[["backproduct.1bc54ddd.png","img/backproduct.png"],"img/backproduct.png"],"/Users/tania/Shatsu/src/img/backproductflip.png":[["backproductflip.7ea28544.png","img/backproductflip.png"],"img/backproductflip.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\Lato\\Lato-Bold.woff":[["Lato-Bold.2e372bce.woff","fonts/Lato/Lato-Bold.woff"],"fonts/Lato/Lato-Bold.woff"],"./..\\fonts\\Lato\\Lato-Bold.woff2":[["Lato-Bold.c2308de0.woff2","fonts/Lato/Lato-Bold.woff2"],"fonts/Lato/Lato-Bold.woff2"],"./..\\fonts\\Thasadith\\Thasadith-Bold.woff":[["Thasadith-Bold.4853060c.woff","fonts/Thasadith/Thasadith-Bold.woff"],"fonts/Thasadith/Thasadith-Bold.woff"],"./..\\fonts\\Thasadith\\Thasadith-Bold.woff2":[["Thasadith-Bold.c0aa0bd2.woff2","fonts/Thasadith/Thasadith-Bold.woff2"],"fonts/Thasadith/Thasadith-Bold.woff2"],"./..\\fonts\\Thasadith\\Thasadith-Regular.woff":[["Thasadith-Regular.cd52cb4c.woff","fonts/Thasadith/Thasadith-Regular.woff"],"fonts/Thasadith/Thasadith-Regular.woff"],"./..\\fonts\\Thasadith\\Thasadith-Regular.woff2":[["Thasadith-Regular.bed94dff.woff2","fonts/Thasadith/Thasadith-Regular.woff2"],"fonts/Thasadith/Thasadith-Regular.woff2"],"C:\\Users\\kayss\\Desktop\\Shatsu\\src\\img\\backproduct.png":[["backproduct.1bc54ddd.png","img/backproduct.png"],"img/backproduct.png"],"C:\\Users\\kayss\\Desktop\\Shatsu\\src\\img\\backproductflip.png":[["backproductflip.7ea28544.png","img/backproductflip.png"],"img/backproductflip.png"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50041" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51899" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../node_modules/parcel/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/styles.5c8f3eab.js.map

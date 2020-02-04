@@ -1,8 +1,34 @@
-.header {
- 
-  position: absolute;
-  width: 1366px;
-  height: 92px;
-  left: 145px;
-  top: 15px;
+body {
+
+  .TitleIris {
+    font-size: 36px;
+    color: #25282D;
+  }
+
+  .Header {
+    background: $Primary-color;
+    font-family: "Tasadith-Bold";
+    position: fixed;
+    width: 100%;
+    height: 92px;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin: auto;
+  }
+
+  .HeaderList {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .HeaderLink {
+    text-decoration: none;
+    color: #25282D;
+    margin-right: 75px;
+  }
 }
