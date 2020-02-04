@@ -144,6 +144,11 @@ table {
 body .TitleIris {
   font-size: 36px;
   color: #25282D;
+  margin-left: 10%;
+  padding: 5px;
+}
+body .TitleIris .LogoIris {
+  size: 20px;
 }
 body .Header {
   background: #F4F0EB;
@@ -160,14 +165,14 @@ body .HeaderList {
   text-decoration: none;
   list-style: none;
   display: flex;
-  margin: auto;
+  margin: 65px 65px auto;
   flex-direction: row;
   list-style-type: none;
 }
 body .HeaderLink {
   text-decoration: none;
   color: #25282D;
-  margin-right: 75px;
+  margin-right: 50px;
 }
 
 .background__block {
