@@ -1,4 +1,46 @@
 body {
+  
+.background__blockmannequin{
+  background-image: url("/img/backproduct.png");
+  position: relative;
+  width: 1366px;
+  height: 646px;
+  left: 0;
+  
+}
+.FirstBox{
+  color: $Primary-color;
+  position: relative;
+  top: 35px;
+}
+
+  .Firstbox__title { 
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top : 500px;
+
+    
+  }
+  .Firstbox__subtitle{
+    width: 500px;
+    height: 100px;
+    top: 300px;
+  }
+
+  .FirstBox__text{
+    width: 500px;
+    height: 200px;
+    top: 220px;
+  }
+
+  
+.background__blockmaroc{
+  background-image: url("/img/backproductflip.png");
+  width: 1366px;
+  height: 646px;
+      
+}
 
   .TitleIris {
     font-size: 36px;
