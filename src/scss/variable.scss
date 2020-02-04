@@ -9,6 +9,12 @@ $Text-color :#DFAF2C;
 }
 
 @font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
     font-family: "Tasadith-Bold";
     src: url("../fonts/Thasadith/Thasadith-Bold.woff") format("woff"),
         url("../fonts/Thasadith/Thasadith-Bold.woff2") format("woff2");
