@@ -189,8 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/annietran/Shatsu/src/img/backproduct.png":[["backproduct.1bc54ddd.png","img/backproduct.png"],"img/backproduct.png"],"/Users/annietran/Shatsu/src/img/backproductflip.png":[["backproductflip.7ea28544.png","img/backproductflip.png"],"img/backproductflip.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-
+},{"./..\\fonts\\Lato\\Lato-Bold.woff":[["Lato-Bold.2e372bce.woff","fonts/Lato/Lato-Bold.woff"],"fonts/Lato/Lato-Bold.woff"],"./..\\fonts\\Lato\\Lato-Bold.woff2":[["Lato-Bold.c2308de0.woff2","fonts/Lato/Lato-Bold.woff2"],"fonts/Lato/Lato-Bold.woff2"],"./..\\fonts\\Lato\\Lato-Regular.woff":[["Lato-Regular.c1ec43a5.woff","fonts/Lato/Lato-Regular.woff"],"fonts/Lato/Lato-Regular.woff"],"./..\\fonts\\Lato\\Lato-Regular.woff2":[["Lato-Regular.02c0d17c.woff2","fonts/Lato/Lato-Regular.woff2"],"fonts/Lato/Lato-Regular.woff2"],"./..\\fonts\\Thasadith\\Thasadith-Bold.woff":[["Thasadith-Bold.4853060c.woff","fonts/Thasadith/Thasadith-Bold.woff"],"fonts/Thasadith/Thasadith-Bold.woff"],"./..\\fonts\\Thasadith\\Thasadith-Bold.woff2":[["Thasadith-Bold.c0aa0bd2.woff2","fonts/Thasadith/Thasadith-Bold.woff2"],"fonts/Thasadith/Thasadith-Bold.woff2"],"./..\\fonts\\Thasadith\\Thasadith-Regular.woff":[["Thasadith-Regular.cd52cb4c.woff","fonts/Thasadith/Thasadith-Regular.woff"],"fonts/Thasadith/Thasadith-Regular.woff"],"./..\\fonts\\Thasadith\\Thasadith-Regular.woff2":[["Thasadith-Regular.bed94dff.woff2","fonts/Thasadith/Thasadith-Regular.woff2"],"fonts/Thasadith/Thasadith-Regular.woff2"],"C:\\Users\\kayss\\Desktop\\Shatsu\\src\\img\\backproduct.png":[["backproduct.1bc54ddd.png","img/backproduct.png"],"img/backproduct.png"],"C:\\Users\\kayss\\Desktop\\Shatsu\\src\\img\\backproductflip.png":[["backproductflip.7ea28544.png","img/backproductflip.png"],"img/backproductflip.png"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -218,8 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61813" + '/');
-
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59147" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
