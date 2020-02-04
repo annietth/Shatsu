@@ -1,12 +1,43 @@
-.header {
-  position: absolute;
+.background__blockmannequin {
+  background-image: url("/backproduct.1bc54ddd.png");
+  position: relative;
   width: 1366px;
-  height: 92px;
-  left: 145px;
-  top: 15px;
+  height: 646px;
+  left: 0;
 }
 
-.background__block {
+.FirstBox {
+  color: #F4F0EB;
+  position: relative;
+  top: 35px;
+}
+
+.Firstbox__title {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  top: 500px;
+}
+
+.Firstbox__subtitle {
+  width: 500px;
+  height: 100px;
+  top: 300px;
+}
+
+.FirstBox__text {
+  width: 500px;
+  height: 200px;
+  top: 220px;
+}
+
+.background__blockmaroc {
+  background-image: url("/backproductflip.7ea28544.png");
+  width: 1366px;
+  height: 646px;
+}
+
+.background__blockflip {
   background-image: url("/backproduct.1bc54ddd.png");
   width: 1366px;
   height: 646px;
