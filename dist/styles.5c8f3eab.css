@@ -147,7 +147,7 @@ table {
 }
 body {
   background: #F4F0EB;
-}
+
 body .Header {
   background: #F4F0EB;
   font-family: "Tasadith-Bold";
@@ -171,6 +171,7 @@ body .LogoTitle .TitleIris {
 }
 body .LogoTitle .TitleIris .LogoIris {
   width: 40%;
+
 }
 body .HeaderList {
   text-decoration: none;
@@ -212,6 +213,7 @@ body .FirstBox__text {
   height: 200px;
   top: 220px;
 }
+
 body .ButtonPerso {
   background-color: #F4F0EB;
   font-size: 16px;
@@ -241,6 +243,7 @@ body .ButtonSavoir:hover {
   border-color: #25282D;
   color: #25282D;
 }
+
 body .background__blockmaroc {
   background-image: url("/backproductflip.7ea28544.png");
   width: 1366px;
