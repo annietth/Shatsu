@@ -32,10 +32,56 @@
   top: 220px;
 }
 
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/Lato-Bold.2e372bce.woff") format("woff"), url("/Lato-Bold.c2308de0.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Tasadith-Bold";
+  src: url("/Thasadith-Bold.4853060c.woff") format("woff"), url("/Thasadith-Bold.c0aa0bd2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Tasadith-Regular";
+  src: url("/Thasadith-Regular.cd52cb4c.woff") format("woff"), url("/Thasadith-Regular.bed94dff.woff2") format("woff2");
+}
+body .TitleIris {
+  font-size: 36px;
+  color: #25282D;
+  margin-left: 10%;
+  padding: 5px;
+}
+body .TitleIris .LogoIris {
+  size: 20px;
+}
+body .Header {
+  background: #F4F0EB;
+  font-family: "Tasadith-Bold";
+  position: fixed;
+  width: 100%;
+  height: 92px;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin: auto;
+}
+body .HeaderList {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin: 65px 65px auto;
+  flex-direction: row;
+  list-style-type: none;
+}
+body .HeaderLink {
+  text-decoration: none;
+  color: #25282D;
+  margin-right: 50px;
+
 .background__blockmaroc {
   background-image: url("/backproductflip.7ea28544.png");
   width: 1366px;
   height: 646px;
+
 }
 
 .background__blockflip {
