@@ -50,41 +50,106 @@ body {
 
   // FIRST BOX //
 
-  .background__blockmannequin {
-    background-image: url("/img/backproduct.png");
-    position: relative;
-    width: 100%;
-    height: 646px;
-    left: 0;
-
-  }
-
   .FirstBox {
-    color: $Primary-color;
+    background: #25282D;
     position: relative;
-    top: 35px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 200px;
   }
-
-  .Firstbox__title {
+  
+  
+  .FirstBox::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    border-color: transparent transparent #25282D transparent;
     position: absolute;
-    width: 500px;
+    top: -50px;
+  }
+  
+  .FirstBox::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0  100vw 50px  0;
+    border-color:  transparent #25282D transparent transparent;
+    position: absolute;
+    bottom: -50px;
+  }
+  
+  .FirstBox__title {
+    position: absolute;
+    width: 650px;
     height: 100px;
-    top: 500px;
+    top: 100px;
+    color: $Primary-color;
+    font-family: "Lato-Regular";
+    font-size: 36px;
 
 
   }
 
-  .Firstbox__subtitle {
-    width: 500px;
+  .FirstBox__subtitle {
+    position: absolute;
+    width: 600px;
     height: 100px;
-    top: 300px;
+    top: 199px;
+    color: $Primary-color;
+    font-family: "Lato-Regular";
+    font-size: 24px;
+
+
   }
 
   .FirstBox__text {
-    width: 500px;
+    position: absolute;
+    width: 600px;
     height: 200px;
-    top: 220px;
+    top: 260px;
+    color: $Primary-color;
+    font-family: "Lato-Regular";
+    font-size: 18px;
   }
+
+  .FirstBox__image {
+    float: right;
+    width: 485px;
+    height: 388px;
+    
+  }
+
+
+// SIGNE ECO-RESPONSABLE //
+
+.GlobalEco {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Lato-Bold";
+  font-weight: lighter;
+
+  .EcoImg__Powder, .EcoImg__Growth, .EcoImg__Recycle{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    padding: 56px;
+  }
+
+  .EcoImg__Growth {
+    width: 23%;
+  }
+
+  .EcoText {
+    text-align: center;
+    width: 61%;
+    margin: auto;
+  }
+}
 
 // BUTTON FIRST BOX //
 
@@ -96,6 +161,7 @@ body {
     border: 1px solid $Second-color;
     width: 150px;
     height: 50px;
+    
   }
   .Button__Perso:hover{
     background-color: $Second-color;
@@ -112,20 +178,58 @@ body {
     border: 1px solid $Primary-color;
     width: 150px;
     height: 50px;
+    
   }
   .Button__Savoir:hover{
     background-color: $Primary-color;
     border-color:$Second-color; 
     color: $Second-color;
+    
   }
 
 // SECOND BOX //
+.Second {
+  background: #25282D;
+  position: relative;
+  height: 400px;
+  padding: 20px;
+  margin-top: 200px;
+}
 
-  .background__blockmaroc {
-    background-image: url("/img/backproductflip.png");
-    width: 1366px;
-    height: 646px;
-  }
+
+.Second::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 100vw;
+  border-color: transparent transparent #25282D transparent;
+  position: absolute;
+  top: -50px;
+}
+
+.Second::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0  100vw 50px  0;
+  border-color:  transparent #25282D transparent transparent;
+  position: absolute;
+  bottom: -50px;
+}
+
+.Second__title {
+  position: absolute;
+  width: 550px;
+  height: 100px;
+  top: 100px;
+  color: $Primary-color;
+  left: 800px;
+  font-family: "Lato-Regular";
+  font-size: 36px;
 
   // SIGNE ECO-RESPONSABLE //
 
@@ -164,6 +268,37 @@ body {
   }
 }
 
+.Second__subtitle {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  top: 199px;
+  left: 800px;
+  color: $Primary-color;
+  font-family: "Lato-Regular";
+  font-size: 24px;
+
+
+}
+
+.Second__text {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 260px;
+  color: $Primary-color;
+  left: 800px;
+  font-family: "Lato-Regular";
+  font-size: 18px;
+}
+
+.Second__image {
+  float: left;
+  width: 604px;
+  height: 413px;
+  
+}
+  
 // FOOTER //
 
   .Footer {
@@ -195,3 +330,4 @@ body {
     width: 12%;
   }
 }
+
