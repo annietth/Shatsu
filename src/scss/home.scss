@@ -18,21 +18,21 @@ body {
     z-index: 1;
   }
 
-  .LogoTitle {
+  .Logo__Title {
     display: flex;
     align-items: center;
 
-    .TitleIris {
+    .Title__Iris {
       font-size: 36px;
       color: #25282D;
 
-      .LogoIris {
+      .Logo__Iris {
         width: 40%;
       }
     }
   }
 
-  .HeaderList {
+  .Header__List {
     text-decoration: none;
     display: flex;
     margin: 50px 0 auto 50px;
@@ -40,12 +40,11 @@ body {
     list-style-type: none;
   }
 
-  .HeaderLink {
+  .Header__Link {
     text-decoration: none;
     color: #25282D;
     margin-right: 50px;
   }
-
 
   // BODY //
 
@@ -87,9 +86,50 @@ body {
     top: 220px;
   }
 
-// SIGNE ECO-RESPONSABLE //
+// BUTTON FIRST BOX //
 
-.GlobalEco {
+  .Button__Perso{
+    background-color: $Primary-color;
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    cursor: pointer;
+    border: 1px solid $Second-color;
+    width: 150px;
+    height: 50px;
+  }
+  .Button__Perso:hover{
+    background-color: $Second-color;
+    border-color: $Primary-color;
+    color: $Primary-color;
+  }
+
+  .Button__Savoir{
+    background-color: $Second-color;
+    font-size: 16px;
+    font-family: "Lato-Regular";
+    color: $Primary-color;
+    cursor: pointer;
+    border: 1px solid $Primary-color;
+    width: 150px;
+    height: 50px;
+  }
+  .Button__Savoir:hover{
+    background-color: $Primary-color;
+    border-color:$Second-color; 
+    color: $Second-color;
+  }
+
+// SECOND BOX //
+
+  .background__blockmaroc {
+    background-image: url("/img/backproductflip.png");
+    width: 1366px;
+    height: 646px;
+  }
+
+  // SIGNE ECO-RESPONSABLE //
+
+.Global__Eco {
   display: flex;
   justify-content: space-evenly;
   font-family: "Lato-Bold";
@@ -113,48 +153,17 @@ body {
   }
 }
 
-// BUTTON FIRST BOX //
+// PROCESS BOX // 
 
-  .ButtonPerso{
-    background-color: $Primary-color;
+.Background__Flower {
+
+  .Flower__Text{
+    font-family: "Tasadith-Bold";
     font-size: 16px;
-    font-family: "Lato-Regular";
-    cursor: pointer;
-    border: 1px solid $Second-color;
-    width: 150px;
-    height: 50px;
+    width: 25%;
   }
-  .ButtonPerso:hover{
-    background-color: $Second-color;
-    border-color: $Primary-color;
-    color: $Primary-color;
-  }
+}
 
-  .ButtonSavoir{
-    background-color: $Second-color;
-    font-size: 16px;
-    font-family: "Lato-Regular";
-    color: $Primary-color;
-    cursor: pointer;
-    border: 1px solid $Primary-color;
-    width: 150px;
-    height: 50px;
-  }
-  .ButtonSavoir:hover{
-    background-color: $Primary-color;
-    border-color:$Second-color; 
-    color: $Second-color;
-  }
-
-// SECOND BOX //
-
-  .background__blockmaroc {
-    background-image: url("/img/backproductflip.png");
-    width: 1366px;
-    height: 646px;
-  }
-
-  
 // FOOTER //
 
   .Footer {
@@ -170,7 +179,7 @@ body {
     color: $Primary-color;
   }
 
-  .FooterAnnexes {
+  .Footer__Annexes {
     display: flex;
 
     .Annexes {
@@ -180,7 +189,7 @@ body {
     }
   }
 
-  .LogosRS {
+  .Logos__RS {
     display: flex;
     justify-content: space-evenly;
     width: 12%;
