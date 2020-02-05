@@ -1,20 +1,125 @@
-.background__blockflip{
-    background-image: url("/img/backproduct.png");
-    width: 1366px;
-    height: 646px;
+$Primary-color : #F4F0EB;
+
+.title{
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.rectangle{
+    position: relative;
+}
+
+.polygon{ 
+    width : 100%;
+    height : 60%;  
+}
+
+.square{
+    position: absolute;
+    width: 26%;
+    height: 60%;
+    left:5%;
+    top:20%;
+
+}
+
+.square__middle{
+    left:37.5%; 
+}
+
+.square__left{
+    left:70%;   
+}
+
+
+.shirt{
+    position: absolute;
+    width: 21%;
+    height: 50%;
+    left:8%;
+    top:26%;
+}
+
+.shirt__middle{
+    left:41%;
+}
+
+.shirt__left{
+    left:73%;
+}
+
+.like{
+    position: absolute;
+    top: 23%;
+    left: 26%;
+    width: 4%;
+    height: 8%;
+}
+.like__middle{
+    left: 91%;
+}
+
+.like__left{
+    left: 58.5%;
+}
+
+.price{
+    position: absolute;
+    top:76.5%;
+    left: 26.5%;
+    color: $Primary-color;
+    font-size: 24px;
+
+}
+
+.price__middle{
+    left: 59%;
+}
     
-    }
     
-.background__blockflip{
-        background-image: url("/img/backproductflip.png");
-        width: 1366px;
-        height: 646px;
-        
-        }
+.price__left{
+    left: 91.5%;
+}
     
-.header{
-     height: 150px;
-    
-        
-    }
-    
+
+.name{
+    position: absolute;
+    top:76.5%;
+    left: 5%; 
+    color: $Primary-color;
+    font-size: 24px;
+}
+
+.name__left{
+    left:70%;
+}
+
+.name__middle{
+    left:37.5%;
+}
+
+
+@media (max-width: 768px){
+ .price{
+     font-size: 14px;
+}
+.name{
+    font-size: 14px;
+}
+}
+
+
+@media (max-width: 425px){
+    .price{
+        font-size: 6px;
+   }
+   .name{
+    font-size: 6px;
+}
+}
+
+
+
+
+
+@medi
