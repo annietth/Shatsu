@@ -126,9 +126,31 @@ body {
   }
 
 
-  
+// SIGNE ECO-RESPONSABLE //
 
+.GlobalEco {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Lato-Bold";
+  font-weight: lighter;
 
+  .EcoImg__Powder, .EcoImg__Growth, .EcoImg__Recycle{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    padding: 56px;
+  }
+
+  .EcoImg__Growth {
+    width: 23%;
+  }
+
+  .EcoText {
+    text-align: center;
+    width: 61%;
+    margin: auto;
+  }
+}
 
 // BUTTON FIRST BOX //
 
@@ -243,13 +265,6 @@ body {
   height: 413px;
   
 }
-
-
-
-
-
-  
-
   
 // FOOTER //
 
@@ -278,7 +293,7 @@ body {
 
   .LogosRS {
     display: flex;
-    margin: auto 30px;
+    justify-content: space-evenly;
     width: 12%;
   }
 }
