@@ -23,7 +23,9 @@ body {
 
     .Title__Iris {
       font-size: 36px;
-      color: #25282d;
+      color: #25282D;
+      text-decoration: none;
+
 
       .Logo__Iris {
         width: 40%;
@@ -36,7 +38,6 @@ body {
     display: flex;
     margin: 50px 0 auto 50px;
     flex-direction: row;
-    list-style-type: none;
   }
 
   .Header__Link {
@@ -50,11 +51,96 @@ body {
   // FIRST BOX //
 
   .FirstBox {
-    background: #25282d;
+    width: 100%;
+    background: #25282D;
+    display: flex;
+    justify-content: center;
     position: relative;
     height: 400px;
     padding: 20px;
     margin-top: 200px;
+
+    .FirstBox__Content {
+      width: 55%;
+      display: block;
+      justify-content: center;
+      align-self: center;
+    }
+
+
+    .FirstBox__title {
+      width: 650px;
+      height: 100px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 36px;
+    }
+
+    .FirstBox__subtitle {
+      margin-bottom: 25px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 24px;
+    }
+
+    .FirstBox__text {
+      width: 60%;
+      height: 25%;
+      margin-bottom: 25px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 18px;
+    }
+
+    .FirstBox__image {
+      width: 40%;
+      height: 100%;
+    }
+
+    // BUTTON FIRST BOX //
+
+
+    .FirstBox__Button {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+
+      .Button__Perso {
+        background-color: $Primary-color;
+        font-size: 16px;
+        font-family: "Lato-Regular";
+        cursor: pointer;
+        border: 1px solid $Second-color;
+        width: 150px;
+        height: 50px;
+
+      }
+
+      .Button__Perso:hover {
+        background-color: $Second-color;
+        border-color: $Primary-color;
+        color: $Primary-color;
+      }
+
+      .Button__Savoir {
+        background-color: $Second-color;
+        font-size: 16px;
+        font-family: "Lato-Regular";
+        color: $Primary-color;
+        cursor: pointer;
+        border: 1px solid $Primary-color;
+        width: 150px;
+        height: 50px;
+
+      }
+
+      .Button__Savoir:hover {
+        background-color: $Primary-color;
+        border-color: $Second-color;
+        color: $Second-color;
+
+      }
+    }
   }
 
   .FirstBox::before {
@@ -67,6 +153,7 @@ body {
     border-color: transparent transparent #25282d transparent;
     position: absolute;
     top: -50px;
+    right: 0;
   }
 
   .FirstBox::after {
@@ -76,54 +163,126 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 100vw 50px 0;
-    border-color: transparent #25282d transparent transparent;
+    border-color: transparent #25282D transparent transparent;
     position: absolute;
     bottom: -50px;
+    right: 0;
   }
 
-  .FirstBox__title {
+  // SECOND BOX //
+
+  .SecondBox {
+    width: 100%;
+    display: flex;
+    background: #25282D;
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    margin-top: 200px;
+
+    .SecondBox__Content {
+      width: 55%;
+      display: block;
+      justify-content: center;
+      align-self: center;
+      margin: auto;
+    }
+
+    .SecondBox__title {
+      width: 650px;
+      height: 100px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 36px;
+    }
+
+    .SecondBox__subtitle {
+      margin-bottom: 25px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 24px;
+    }
+
+    .SecondBox__text {
+      width: 60%;
+      height: 25%;
+      margin-bottom: 25px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 18px;
+    }
+
+    .SecondBox__image {
+      width: 40%;
+      height: 100%;
+    }
+
+    .SecondBox__Button {
+      width: 75%;
+      display: flex;
+      justify-content: flex-end;
+
+      .Button__Savoir {
+        background-color: $Second-color;
+        font-size: 16px;
+        font-family: "Lato-Regular";
+        color: $Primary-color;
+        cursor: pointer;
+        border: 1px solid $Primary-color;
+        width: 150px;
+        height: 50px;
+
+      }
+
+      .Button__Savoir:hover {
+        background-color: $Primary-color;
+        border-color: $Second-color;
+        color: $Second-color;
+      }
+    }
+  }
+
+
+  .SecondBox::before {
+    content: '';
+    display: block;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    border-color: transparent transparent #25282D transparent;
     position: absolute;
-    width: 650px;
-    height: 100px;
-    top: 100px;
-    color: $Primary-color;
-    font-family: "Lato-Regular";
-    font-size: 36px;
+    top: -50px;
+    transform: scaleX(-1);
   }
 
-  .FirstBox__subtitle {
+
+  .SecondBox::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 50px 0;
+    border-color: transparent #25282D transparent transparent;
     position: absolute;
-    width: 600px;
-    height: 100px;
-    top: 199px;
-    color: $Primary-color;
-    font-family: "Lato-Regular";
-    font-size: 24px;
-  }
-
-  .FirstBox__text {
-    position: absolute;
-    width: 600px;
-    height: 200px;
-    top: 260px;
-    color: $Primary-color;
-    font-family: "Lato-Regular";
-    font-size: 18px;
-  }
-
-  .FirstBox__image {
-    float: right;
-    width: 485px;
-    height: 388px;
+    left: 0;
+    bottom: -50px;
+    transform: scaleX(-1);
   }
 
   // SIGNE ECO-RESPONSABLE //
 
-  .GlobalEco {
+  .Global__Eco {
+
     display: flex;
     justify-content: space-evenly;
     font-family: "Lato-Bold";
     font-weight: lighter;
+    align-items: center;
+    margin-top: 100px;
+
 
     .EcoImg__Powder,
     .EcoImg__Growth,
@@ -144,22 +303,90 @@ body {
       margin: auto;
     }
   }
+  
+  // THIRD BOX //
 
-  // BUTTON FIRST BOX //
+  .ThirdBox {
 
-  .Button__Perso {
-    background-color: $Primary-color;
-    font-size: 16px;
-    font-family: "Lato-Regular";
-    cursor: pointer;
-    border: 1px solid $Second-color;
-    width: 150px;
-    height: 50px;
+    display: flex;
+    background: #25282D;
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+
+    .ThirdBox__Content {
+      width: 55%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-self: center;
+      margin: auto;
+    }
+
+    .ThirdBox__Text {
+      font-family: "Tasadith-Bold";
+      color: $Primary-color;
+      font-size: 18px;
+      width: 65%;
+      margin-bottom: 50px;
+    }
+
+    .ThirdBox__Img {
+      width: 40%;
+      height: 100%;
+    }
+
+    .ThirdBox__Button {
+      width: 75%;
+      display: flex;
+      justify-content: flex-end;
+
+      .Button__Savoir {
+        background-color: $Second-color;
+        font-size: 16px;
+        font-family: "Lato-Regular";
+        color: $Primary-color;
+        cursor: pointer;
+        border: 1px solid $Primary-color;
+        width: 150px;
+        height: 50px;
+      }
+
+      .Button__Savoir:hover {
+        background-color: $Primary-color;
+        border-color: $Second-color;
+        color: $Second-color;
+      }
+    }
   }
-  .Button__Perso:hover {
-    background-color: $Second-color;
-    border-color: $Primary-color;
-    color: $Primary-color;
+
+  .ThirdBox::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    border-color: transparent transparent #25282D transparent;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+
+  .ThirdBox::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 50px 0;
+    border-color: transparent #25282D transparent transparent;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
   }
 
   .Button__Savoir {
@@ -178,115 +405,94 @@ body {
     color: $Second-color;
   }
 
-  // SECOND BOX //
-  .Second {
-    background: #25282d;
+
+ // FOURTH BOX // 
+
+  .FourthBox {
+
+    display: flex;
+    background: #25282D;
     position: relative;
     height: 400px;
     padding: 20px;
-    margin-top: 200px;
+    margin:150px 0;
+    width: 100%;
+    height: 100%;
+
+    .FourthBox__Content {
+      width: 55%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-self: center;
+      margin: auto;
+    }
+
+    .FourthBox__Text {
+      font-family: "Tasadith-Bold";
+      color: $Primary-color;
+      font-size: 18px;
+      width: 65%;
+      margin-bottom: 50px;
+    }
+
+    .FourthBox__Img {
+      width: 40%;
+      height: 100%;
+    }
+
+    .FourthBox__Button {
+      width: 75%;
+      display: flex;
+      justify-content: flex-end;
+
+      .Button__Savoir {
+        background-color: $Second-color;
+        font-size: 16px;
+        font-family: "Lato-Regular";
+        color: $Primary-color;
+        cursor: pointer;
+        border: 1px solid $Primary-color;
+        width: 150px;
+        height: 50px;
+      }
+
+      .Button__Savoir:hover {
+        background-color: $Primary-color;
+        border-color: $Second-color;
+        color: $Second-color;
+      }
+    }
   }
 
-  .Second::before {
-    content: "";
+
+  .FourthBox::before {
+    content: '';
     display: block;
+    left: 0;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 0 50px 100vw;
-    border-color: transparent transparent #25282d transparent;
+    border-color: transparent transparent #25282D transparent;
     position: absolute;
     top: -50px;
+    transform: scaleX(-1);
   }
 
-  .Second::after {
-    content: "";
+  .FourthBox::after {
+    content: '';
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 100vw 50px 0;
-    border-color: transparent #25282d transparent transparent;
+    border-color: transparent #25282D transparent transparent;
     position: absolute;
+    left: 0;
     bottom: -50px;
+    transform: scaleX(-1);
   }
-
-  .Second__title {
-    position: absolute;
-    width: 550px;
-    height: 100px;
-    top: 100px;
-    color: $Primary-color;
-    left: 800px;
-    font-family: "Lato-Regular";
-    font-size: 36px;
-  }
-  // SIGNE ECO-RESPONSABLE //
-
-  .Global__Eco {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Lato-Bold";
-    font-weight: lighter;
-
-    .EcoImg__Powder,
-    .EcoImg__Growth,
-    .EcoImg__Recycle {
-      display: flex;
-      margin: auto;
-      width: 30%;
-      padding: 56px;
-    }
-
-    .EcoImg__Growth {
-      width: 23%;
-    }
-
-    .EcoText {
-      text-align: center;
-      width: 61%;
-      margin: auto;
-    }
-  }
-
-  // PROCESS BOX //
-
-  .Background__Flower {
-    .Flower__Text {
-      font-family: "Tasadith-Bold";
-      font-size: 16px;
-      width: 25%;
-    }
-  }
-
-  .Second__subtitle {
-    position: absolute;
-    width: 500px;
-    height: 100px;
-    top: 199px;
-    left: 800px;
-    color: $Primary-color;
-    font-family: "Lato-Regular";
-    font-size: 24px;
-  }
-
-  .Second__text {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    top: 260px;
-    color: $Primary-color;
-    left: 800px;
-    font-family: "Lato-Regular";
-    font-size: 18px;
-  }
-
-  .Second__image {
-    float: left;
-    width: 604px;
-    height: 413px;
-  }
-
   // FOOTER //
 
   .Footer {
@@ -314,7 +520,8 @@ body {
 
   .Logos__RS {
     display: flex;
-    justify-content: space-evenly;
-    width: 12%;
+    justify-content: flex-end;
+    margin: auto;
+    width: 55%;
   }
 }
