@@ -147,7 +147,7 @@ table {
 }
 body {
   background: #F4F0EB;
-
+}
 body .Header {
   background: #F4F0EB;
   font-family: "Tasadith-Bold";
@@ -171,7 +171,6 @@ body .LogoTitle .TitleIris {
 }
 body .LogoTitle .TitleIris .LogoIris {
   width: 40%;
-
 }
 body .HeaderList {
   text-decoration: none;
@@ -188,7 +187,7 @@ body .HeaderLink {
 body .background__blockmannequin {
   background-image: url("/backproduct.1bc54ddd.png");
   position: relative;
-  width: 1366px;
+  width: 100%;
   height: 646px;
   left: 0;
 }
@@ -213,7 +212,26 @@ body .FirstBox__text {
   height: 200px;
   top: 220px;
 }
-
+body .GlobalEco {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Lato-Bold";
+  font-weight: lighter;
+}
+body .GlobalEco .EcoImg__Powder, body .GlobalEco .EcoImg__Growth, body .GlobalEco .EcoImg__Recycle {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  padding: 56px;
+}
+body .GlobalEco .EcoImg__Growth {
+  width: 23%;
+}
+body .GlobalEco .EcoText {
+  text-align: center;
+  width: 61%;
+  margin: auto;
+}
 body .ButtonPerso {
   background-color: #F4F0EB;
   font-size: 16px;
@@ -243,7 +261,6 @@ body .ButtonSavoir:hover {
   border-color: #25282D;
   color: #25282D;
 }
-
 body .background__blockmaroc {
   background-image: url("/backproductflip.7ea28544.png");
   width: 1366px;
@@ -271,24 +288,122 @@ body .FooterAnnexes .Annexes {
 }
 body .LogosRS {
   display: flex;
-  margin: auto 30px;
+  justify-content: space-evenly;
   width: 12%;
 }
 
-.background__blockflip {
-  background-image: url("/backproduct.1bc54ddd.png");
-  width: 1366px;
-  height: 646px;
+.title {
+  margin-left: 40%;
+  font-size: 30px;
 }
 
-.background__blockflip {
-  background-image: url("/backproductflip.7ea28544.png");
-  width: 1366px;
-  height: 646px;
+.rectangle {
+  position: relative;
 }
 
-.header {
-  height: 150px;
+.polygon {
+  width: 100%;
+  height: 60%;
 }
+
+.square {
+  position: absolute;
+  width: 26%;
+  height: 60%;
+  left: 5%;
+  top: 20%;
+}
+
+.square__middle {
+  left: 37.5%;
+}
+
+.square__left {
+  left: 70%;
+}
+
+.shirt {
+  position: absolute;
+  width: 21%;
+  height: 50%;
+  left: 8%;
+  top: 26%;
+}
+
+.shirt__middle {
+  left: 41%;
+}
+
+.shirt__left {
+  left: 73%;
+}
+
+.like {
+  position: absolute;
+  top: 23%;
+  left: 26%;
+  width: 4%;
+  height: 8%;
+}
+
+.like__middle {
+  left: 91%;
+}
+
+.like__left {
+  left: 58.5%;
+}
+
+.price {
+  position: absolute;
+  top: 76.5%;
+  left: 26.5%;
+  color: #F4F0EB;
+  font-size: 24px;
+}
+
+.price__middle {
+  left: 59%;
+}
+
+.price__left {
+  left: 91.5%;
+}
+
+.name {
+  position: absolute;
+  top: 76.5%;
+  left: 5%;
+  color: #F4F0EB;
+  font-size: 24px;
+}
+
+.name__left {
+  left: 70%;
+}
+
+.name__middle {
+  left: 37.5%;
+}
+
+@media (max-width: 768px) {
+  .price {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .price {
+    font-size: 6px;
+  }
+
+  .name {
+    font-size: 6px;
+  }
+}
+@medi;
 
 /*# sourceMappingURL=/styles.5c8f3eab.css.map */

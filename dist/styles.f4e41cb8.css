@@ -1,0 +1,409 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/813a49184610b7c30f81ecacf0305890.woff") format("woff"), url("/abcb64264b0d96bf94d8a0cd77f70ff5.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/d98bc76374fb4012a8f323527bc1b8c1.woff") format("woff"), url("/c3e1f6a2d5954304493e36f6ab62e9e1.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Tasadith-Bold";
+  src: url("/eff0c2332859d09ff075853755dde8b6.woff") format("woff"), url("/013e349f99a3d0280b40ef0e116c3722.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Tasadith-Regular";
+  src: url("/e827fdb1892f34a1656cbec36492b8cb.woff") format("woff"), url("/a6c4dc989bcbd4a75489f28781206ed9.woff2") format("woff2");
+}
+body {
+  background: #F4F0EB;
+}
+body .Header {
+  background: #F4F0EB;
+  font-family: "Tasadith-Bold";
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  height: 92px;
+  left: 0;
+  top: 0;
+  display: flex;
+  margin: auto;
+  z-index: 1;
+}
+body .LogoTitle {
+  display: flex;
+  align-items: center;
+}
+body .LogoTitle .TitleIris {
+  font-size: 36px;
+  color: #25282D;
+}
+body .LogoTitle .TitleIris .LogoIris {
+  width: 40%;
+}
+body .HeaderList {
+  text-decoration: none;
+  display: flex;
+  margin: 50px 0 auto 50px;
+  flex-direction: row;
+  list-style-type: none;
+}
+body .HeaderLink {
+  text-decoration: none;
+  color: #25282D;
+  margin-right: 50px;
+}
+body .background__blockmannequin {
+  background-image: url("/2ef2593c5d464339847fa57e1bc54ddd.png");
+  position: relative;
+  width: 100%;
+  height: 646px;
+  left: 0;
+}
+body .FirstBox {
+  color: #F4F0EB;
+  position: relative;
+  top: 35px;
+}
+body .Firstbox__title {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  top: 500px;
+}
+body .Firstbox__subtitle {
+  width: 500px;
+  height: 100px;
+  top: 300px;
+}
+body .FirstBox__text {
+  width: 500px;
+  height: 200px;
+  top: 220px;
+}
+body .GlobalEco {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Lato-Bold";
+  font-weight: lighter;
+}
+body .GlobalEco .EcoImg__Powder, body .GlobalEco .EcoImg__Growth, body .GlobalEco .EcoImg__Recycle {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  padding: 56px;
+}
+body .GlobalEco .EcoImg__Growth {
+  width: 23%;
+}
+body .GlobalEco .EcoText {
+  text-align: center;
+  width: 61%;
+  margin: auto;
+}
+body .ButtonPerso {
+  background-color: #F4F0EB;
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  cursor: pointer;
+  border: 1px solid #25282D;
+  width: 150px;
+  height: 50px;
+}
+body .ButtonPerso:hover {
+  background-color: #25282D;
+  border-color: #F4F0EB;
+  color: #F4F0EB;
+}
+body .ButtonSavoir {
+  background-color: #25282D;
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  color: #F4F0EB;
+  cursor: pointer;
+  border: 1px solid #F4F0EB;
+  width: 150px;
+  height: 50px;
+}
+body .ButtonSavoir:hover {
+  background-color: #F4F0EB;
+  border-color: #25282D;
+  color: #25282D;
+}
+body .background__blockmaroc {
+  background-image: url("/c1d2a5eed450462f269ed3d67ea28544.png");
+  width: 1366px;
+  height: 646px;
+}
+body .Footer {
+  font-family: "Tasadith-Bold";
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #25282D;
+  color: #F4F0EB;
+}
+body .FooterAnnexes {
+  display: flex;
+}
+body .FooterAnnexes .Annexes {
+  text-decoration: none;
+  color: #F4F0EB;
+  margin: auto 30px;
+}
+body .LogosRS {
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+}
+
+.title {
+  margin-left: 40%;
+  font-size: 30px;
+}
+
+.rectangle {
+  position: relative;
+}
+
+.polygon {
+  width: 100%;
+  height: 60%;
+}
+
+.square {
+  position: absolute;
+  width: 26%;
+  height: 60%;
+  left: 5%;
+  top: 20%;
+}
+
+.square__middle {
+  left: 37.5%;
+}
+
+.square__left {
+  left: 70%;
+}
+
+.shirt {
+  position: absolute;
+  width: 21%;
+  height: 50%;
+  left: 8%;
+  top: 26%;
+}
+
+.shirt__middle {
+  left: 41%;
+}
+
+.shirt__left {
+  left: 73%;
+}
+
+.like {
+  position: absolute;
+  top: 23%;
+  left: 26%;
+  width: 4%;
+  height: 8%;
+}
+
+.like__middle {
+  left: 91%;
+}
+
+.like__left {
+  left: 58.5%;
+}
+
+.price {
+  position: absolute;
+  top: 76.5%;
+  left: 26.5%;
+  color: #F4F0EB;
+  font-size: 24px;
+}
+
+.price__middle {
+  left: 59%;
+}
+
+.price__left {
+  left: 91.5%;
+}
+
+.name {
+  position: absolute;
+  top: 76.5%;
+  left: 5%;
+  color: #F4F0EB;
+  font-size: 24px;
+}
+
+.name__left {
+  left: 70%;
+}
+
+.name__middle {
+  left: 37.5%;
+}
+
+@media (max-width: 768px) {
+  .price {
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .price {
+    font-size: 6px;
+  }
+
+  .name {
+    font-size: 6px;
+  }
+}
+@medi;
+
+/*# sourceMappingURL=/styles.f4e41cb8.css.map */
