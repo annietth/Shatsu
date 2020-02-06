@@ -16,116 +16,131 @@
     <!-- HEADER -->
 
     <header class="Header">
-        <div class="Logo__Title">
-            <a class="Title__Iris" href="index.html"><img class="Logo__Iris" src="../src/img/logo-iris.svg"
-                    alt="LogoIris">IRIS</a>
+        <div class="Logo__title">
+            <a class="Title__iris" href="index.html"><img class="Logo__iris" src="../src/img/logo-iris.svg"
+                    alt="logo_iris">IRIS</a>
         </div>
-        <div class="Header__List">
-            <a class="Header__Link" href="index.html">LA MARQUE</a>
-            <a class="Header__Link" href="">PERSONNALISER</a>
-            <a class="Header__Link" href="/pages/products.html">NOS PRODUITS</a>
-            <a class="Header__Link" href="">PROCESSUS</a>
-            <a class="Header__Link" href="index.html">BOUTIQUES</a>
+        <div class="Header__list">
+            <a class="Header__link" href="index.html">LA MARQUE</a>
+            <a class="Header__link" href="./pages/Perso.html">PERSONNALISER</a>
+            <a class="Header__link" href="/pages/products.html">NOS PRODUITS</a>
+            <a class="Header__link" href="">PROCESSUS</a>
+            <a class="Header__link" href="index.html">BOUTIQUES</a>
         </div>
     </header>
 
     <!-- MAIN CONTENT FIRST BOX -->
 
-    <div class="FirstBox">
-        <div class="FirstBox__Content">
-            <h2 class="FirstBox__title">Personnalisez votre Shatsu, la chemise éco-responsable!</h2>
-            <h3 class="FirstBox__subtitle">La difference n'est pas un défaut, c'est un pouvoir!</h3>
+    <section class="FirstBox">
+    <article class="FirstBox__background">
+        <div class="FirstBox__content">
+            <h2 class="FirstBox__title">Personnalisez votre Shatsu, la chemise éco-responsable !</h2>
+            <h3 class="FirstBox__subtitle">La difference n'est pas un défaut, c'est un pouvoir !</h3>
             <p class="FirstBox__text">
                 Dès à présent, customisez votre unique chemise.
                 Un mixte entre des tissus entièrement bio, des boutons issus de récupération et des couleurs provenant
                 d’épices et floral 100 % naturel.
             </p>
-            <div class="FirstBox__Button">
-                <button class="Button__Perso" onclick="personnaliser()">PERSONNALISER</button>
-                <button class="Button__Savoir" onclick="ensavoir()">EN SAVOIR + </button>
-            </div>
+            <p class="FirstBox__mobile__text">Un mixte entre des tissus entièrement bio, des boutons issus de récupération et des couleurs provenant d’épices et de fleurs 100 % naturel.
+            </p>
         </div>
-        <img class="FirstBox__image" src="img/mannequin.png" alt="mannequin_porte_chemise"></img>
-    </div>
+        <article class="FirstBox__imgbox__button">
+            <div class="FirstBox__imgbox">
+                <img class="FirstBox__img" src="img/mannequin.png" alt="mannequin_porte_chemise"></img>
+            </div>
+            <div class="FirstBox__button">
+                <button class="button__perso" onclick="personnaliser()">PERSONNALISER</button>
+                <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
+            </div>
+        </article>
+    </article>
+</section>
 
     <!-- MAIN CONTENT SECOND BOX -->
 
-    <div class="SecondBox">
-        <img class="SecondBox__image" src="img/paysage.png" alt="paysage_maroc"></img>
-        <div class="SecondBox__Content">
-            <h2 class="SecondBox__title">Inspiré du Maroc !</h2>
-            <h3 class="SecondBox__subtitle">Directement importer des tanneries traditionnelles de Fès</h3>
-            <p class="SecondBox__text">
-                Shatsu la chemise éco-responsable qui révolutionne l’industrie française.
-                Nous savons qu'être éco-responsable est important pour vous. Mais il n'est pas toujours facile de
-                changer ses vieilles habitudes. Une nouvelle tendance arrive et vous oubliez vos principes.
-            </p>
-            <div class="SecondBox__Button">
-                <button class="Button__Savoir" onclick="ensavoir()">EN SAVOIR + </button>
+    <section class="SecondBox">
+        <article class="SecondBox__background">
+            <div class="SecondBox__content">
+                <h2 class="SecondBox__title">Inspiré  du Maroc !</h2>
+                <h3 class="SecondBox__subtitle">Directement importer des tanneries traditionnelles de Fès.</h3>
+                <p class="SecondBox__text">
+                    Le procédé utilisé à Fès est centenaire et artisanal, il est aussi totalement naturel et les teintures sont faites avec des épices et des plantes cela à été le déclique pour choisir cette technique pour teindre le Shatsu. Nous sommes restés un an a Fès afin de connaître le processus sur le bout des doigts afin de pouvoir l’industrialiser.
+                </p>
+                <p class="SecondBox__mobile__text">Notre procédé est  importer des tanneries traditionnelles de Fès
+                </p>
             </div>
-        </div>
-    </div>
+            <article class="SecondBox__imgbox__button">
+                <div class="SecondBox__imgbox">
+                    <img class="SecondBox__img" src="img/teinture-fes.jpg" alt="teinture_fes"></img>
+                </div>
+                <div class="SecondBox__button">
+                    <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
+                </div>
+            </article>
+        </article>
+    </section>
 
 
     <!-- GLOBAL ECO-RESPONSABLE -->
 
-    <div class="Global__Eco">
-        <div class="EcoResp">
-            <img class="EcoImg__Powder" src="./img/powder.svg" alt="Powder">
-            <p class="EcoText">Colorants d'origine naturels</p>
-        </div>
-        <div class="EcoResp">
-            <img class="EcoImg__Growth" src="./img/growth.svg" alt="Growth">
-            <p class="EcoText">Vêtement respectueux de l'environnement</p>
-        </div>
-        <div class="EcoResp">
-            <img class="EcoImg__Recycle" src="./img/recycle.svg" alt="Recycle">
-            <p class="EcoText"> Plastique 100% recyclé</p>
-        </div>
-    </div>
+    <section class="Global__Eco">
+        <article class="Eco__resp">
+            <img class="Eco__img__powder" src="./img/powder.svg" alt="powder">
+            <p class="Eco__text">Colorants d'origine naturels</p>
+        </article>
+        <article class="Eco__resp">
+            <img class="Eco__img__growth" src="./img/growth.svg" alt="growth">
+            <p class="Eco__text">Vêtement respectueux de l'environnement</p>
+        </article>
+        <article class="Eco__resp">
+            <img class="Eco__img__recycle" src="./img/recycle.svg" alt="recycle">
+            <p class="Eco__text"> Plastique 100% recyclé</p>
+        </article>
+    </section>
 
     <!-- MORE ABOUT OUR PROCESSUS FIRST BOX -->
 
     <div class="ThirdBox">
-        <div class="ThirdBox__Content">
-            <p class="ThirdBox__Text">
+        <div class="ThirdBox__content">
+            <p class="ThirdBox__text">
                 Les fleurs sont une formidable source de colorants naturels ...
             </p>
             <div class="ThirdBox__Button">
-                <button class="Button__Savoir" onclick="ensavoir()">EN SAVOIR +</button>
+                <button class="Button__savoir" onclick="ensavoir()">EN SAVOIR +</button>
             </div>
         </div>
-        <img class="ThirdBox__Img" src="./img/flower.png" alt="FlowerImg">
+        <img class="ThirdBox__img" src="./img/flower.png" alt="FlowerImg">
     </div>
 
     <!-- MORE ABOUT OUR PROCESSUS SECOND BOX -->
 
     <div class="FourthBox">
-        <div class="FourthBox__Content">
-            <p class="FourthBox__Text">
+        <img class="FourthBox__img" src="./img/spice.png" alt="SpiceImg">
+        <div class="FourthBox__content">
+            <p class="FourthBox__text">
                 Utilisés depuis des milliers d’années pour teindre les vêtements les épices sont de parfaits alliés pour
                 une teinture éco-responsable et durable. Elles nous offrent de magnifiques nuances de couleur dans les
                 tons chauds.
             </p>
             <div class="FourthBox__Button">
-            <button class="Button__Savoir" onclick="ensavoir()">EN SAVOIR +</button>
+            <button class="Button__savoir" onclick="ensavoir()">EN SAVOIR +</button>
             </div>
         </div>
-        <img class="FourthBox__Img" src="./img/spice.png" alt="SpiceImg">
+        
     </div>
 
     <!-- FOOTER -->
 
     <footer class="Footer">
-        <div class="Footer__Annexes">
-            <a class="Annexes" href=""> Mention légales </a>
-            <a class="Annexes" href=""> Contacts </a>
-            <a class="Annexes" href=""> Livraison </a>
+        <div class="Footer__annexes">
+            <a class="annexes" href=""> Mention légales </a>
+            <a class="annexes" href=""> Contacts </a>
+            <a class="annexes" href=""> Livraison </a>
         </div>
-        <div class="Logos__RS">
-            <a href="https://www.instagram.com/"><img class="Logos__RS Logos__instagram " src="../src/img/logo-instagram.svg"></a>
-            <a href="https://www.facebook.com/"><img class="Logos__RS Logos__facebook" src="../src/img/logo-facebook.svg"></a>
-            <a href="https://twitter.com"><img class="Logos__RS Logos__twitter" src="../src/img/logo-twitter.svg"></a>
+        <div class="Logos__rs">
+            <a href="https://www.instagram.com/"><img class="Logos__rs Logos__instagram " src="../src/img/logo-instagram.svg"></a>
+            <a href="https://www.facebook.com/"><img class="Logos__rs Logos__facebook" src="../src/img/logo-facebook.svg"></a>
+            <a href="https://twitter.com"><img class="Logos__rs Logos__twitter" src="../src/img/logo-twitter.svg"></a>
         </div>
     </footer>
 </body>
