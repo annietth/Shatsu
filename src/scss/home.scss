@@ -98,7 +98,9 @@
     }
 
     .FirstBox__mobile__text,
-    .SecondBox__mobile__text {
+    .SecondBox__mobile__text,
+    .FirstBox__text__processus,
+    .SecondBox__text__processus  {
       width: fit-content;
       height: auto;
       margin-bottom: 12px;
@@ -418,7 +420,9 @@
       }
 
       .FirstBox__text,
-      .SecondBox__text {
+      .SecondBox__text,
+      .FirstBox__text__processus,
+      .SecondBox__text__processus {
         width: 60%;
         height: 25%;
         margin-bottom: 25px;
