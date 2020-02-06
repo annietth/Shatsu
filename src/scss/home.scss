@@ -87,16 +87,6 @@
       display: none;
     }
 
-    .ThirdBox__text,
-    .FourthBox__text {
-      width: fit-content;
-      height: auto;
-      margin-bottom: 12px;
-      color: $Primary-color;
-      font-family: "Lato-Regular";
-      font-size: 12px;
-    }
-
     .FirstBox__mobile__text,
     .SecondBox__mobile__text,
     .FirstBox__text__processus,
@@ -180,8 +170,7 @@
     }
 
 
-    .FirstBox::before,
-    .ThirdBox::before {
+    .FirstBox::before {
       content: "";
       display: block;
       width: 0;
@@ -194,8 +183,7 @@
       right: 0;
     }
 
-    .FirstBox::after,
-    .ThirdBox::after {
+    .FirstBox::after {
       content: "";
       display: block;
       width: 0;
@@ -208,8 +196,7 @@
       right: 0;
     }
 
-    .SecondBox::before,
-    .FourthBox::before {
+    .SecondBox::before {
       content: '';
       display: block;
       left: 0;
@@ -223,8 +210,7 @@
       transform: scaleX(-1);
     }
 
-    .SecondBox::after,
-    .FourthBox::after {
+    .SecondBox::after {
       content: '';
       display: block;
       width: 0;
@@ -272,7 +258,7 @@
 
     // FOOTER //
 
-    .Footer {
+    .Footer, .Footer__persona {
       font-family: "Tasadith-Bold";
       font-size: 10px;
       display: flex;
@@ -283,6 +269,10 @@
       height: 50px;
       background: $Second-color;
       color: $Primary-color;
+    }
+
+    .Footer__persona  {
+      position: fixed;
     }
 
     .Footer__annexes {
@@ -401,7 +391,8 @@
 
       .SecondBox__title,
       .SecondBox__subtitle,
-      .SecondBox__text {
+      .SecondBox__text,
+      .SecondBox__text__processus {
         margin-left: 50px;
       }
 
@@ -573,7 +564,7 @@
 
     // FOOTER //
 
-    .Footer {
+    .Footer, .Footer__persona {
       font-family: "Tasadith-Bold";
       font-size: 16px;
       display: flex;
@@ -584,6 +575,10 @@
       height: 50px;
       background: $Second-color;
       color: $Primary-color;
+    }
+    
+    .Footer__persona  {
+      position: fixed;
     }
 
     .Footer__annexes {
