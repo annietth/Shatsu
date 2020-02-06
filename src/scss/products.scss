@@ -75,9 +75,11 @@ body {
 
 .title {
   font-family: "Tasadith-Bold";
-  margin-left: 40%;
-  font-size: 30px;
-  margin-top: 20%;
+  font-size: 28px;
+  display: flex;
+  margin: 20% auto 0 auto;
+  width: auto;
+  justify-content: center;
   color: $Second-color;
 }
 
