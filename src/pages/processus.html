@@ -7,6 +7,8 @@
     <link href="../scss/reset.scss" rel="stylesheet" />
     <link href="../scss/processus.scss" rel="stylesheet" />
     <link href="../scss/styles.scss" rel="stylesheet"/>
+    <link rel="stylesheet" href="../scss/burger.scss">
+    <script defer src="../burger.js"></script>
     <title>Processus</title>
   </head>
 <body>
@@ -15,13 +17,33 @@
         <div class="LogoTitle">
             <p class="TitleIris"><img class="LogoIris" src="../img/logo-iris.svg" alt="LogoIris">IRIS</p>
         </div>
+
+        
         <div class="Header__list">
           <a class="Header__link" href="../index.html">LA MARQUE</a>
           <a class="Header__link" href="./Perso.html">PERSONNALISER</a>
           <a class="Header__link" href="./products.html">NOS PRODUITS</a>
           <a class="Header__link" href="./processus.html">PROCESSUS</a>
           <a class="Header__link" href="../index.html">BOUTIQUES</a>
-      </div>
+        </div>
+
+        <section class="content">
+          <article class="content__Burger">
+            <span class="Burger__line1"></span>
+            <span class="Burger__line2"></span>
+            <span class="Burger__line3"></span>
+          </article>
+          <span class="content__menu">
+            <ul class="content__menu__ul--hiden">
+              <a href=""><li>La Marque</li></a>
+              <a href=""><li>Personnaliser</li></a>
+              <a href=""><li>Nos Produits</li></a>
+              <a href=""><li>Processus</li></a>
+              <a href=""><li>Boutique</li></a>
+            </ul>
+          </span>
+        </section>
+
     </header>
 
     <div class="step step__first">
