@@ -8,11 +8,11 @@
     <title>Shatsu</title>
     <link rel="stylesheet" href="/scss/reset.scss">
     <link rel="stylesheet" href="/scss/styles.scss">
-    <link rel="stylesheet" href="/scss/burger.scss">
-    <script defer src="../src/burger.js"></script>
 </head>
 
-<body>    
+<body>
+    <script type="text/javascript" src="script.js"></script>
+
     <!-- HEADER -->
 
     <header class="Header">
@@ -20,75 +20,62 @@
             <a class="Title__iris" href="index.html"><img class="Logo__iris" src="../src/img/logo-iris.svg"
                     alt="logo_iris">IRIS</a>
         </div>
-
         <div class="Header__list">
             <a class="Header__link" href="index.html">LA MARQUE</a>
-            <a class="Header__link" href="../src/pages/Perso.html">PERSONNALISER</a>
+            <a class="Header__link" href="./pages/custom.html">PERSONNALISER</a>
             <a class="Header__link" href="/pages/products.html">NOS PRODUITS</a>
-            <a class="Header__link" href="/pages/processus.html">PROCESSUS</a>
+            <a class="Header__link" href="">PROCESSUS</a>
             <a class="Header__link" href="index.html">BOUTIQUES</a>
-
         </div>
-        <!-- BURGER -->
-        <section class="content">
-            <article class="content__Burger">
-              <span class="Burger__line1"></span>
-              <span class="Burger__line2"></span>
-              <span class="Burger__line3"></span>
-            </article>
-            <span class="content__menu">
-              <ul class="content__menu__ul--hiden">
-                <a href="index.html"><li>La Marque</li></a>
-                <a href="../src/pages/Perso.html"><li>Personnaliser</li></a>
-                <a href="/pages/products.html"><li>Nos Produits</li></a>
-                <a href="/pages/processus.html"><li>Processus</li></a>
-                <a href="index.html"><li>Boutique</li></a>
-              </ul>
-            </span>
-          </section>
-
     </header>
 
     <!-- MAIN CONTENT FIRST BOX -->
 
     <section class="FirstBox">
-    <article class="FirstBox__background">
-        <div class="FirstBox__content">
-            <h2 class="FirstBox__title">Personnalisez votre Shatsu, la chemise éco-responsable !</h2>
-            <h3 class="FirstBox__subtitle">La difference n'est pas un défaut, c'est un pouvoir !</h3>
-            <p class="FirstBox__text">
-                Dès à présent, customisez votre unique chemise.
-                Un mixte entre des tissus entièrement bio, des boutons issus de récupération et des couleurs provenant
-                d’épices et floral 100 % naturel.
-            </p>
-            <p class="FirstBox__mobile__text">Un mixte entre des tissus entièrement bio, des boutons issus de récupération et des couleurs provenant d’épices et de fleurs 100 % naturel.
-            </p>
-        </div>
-        <article class="FirstBox__imgbox__button">
-            <div class="FirstBox__imgbox">
-                <img class="FirstBox__img" src="img/mannequin.png" alt="mannequin_porte_chemise"></img>
+        <article class="FirstBox__background">
+            <div class="FirstBox__content">
+                <h2 class="FirstBox__title">Personnalisez votre Shatsu, la chemise éco-responsable !</h2>
+                <h3 class="FirstBox__subtitle">La difference n'est pas un défaut, c'est un pouvoir !</h3>
+                <p class="FirstBox__text">
+                    Dès à présent, customisez votre unique chemise.
+                    Un mixte entre des tissus entièrement bio, des boutons issus de récupération et des couleurs
+                    provenant
+                    d’épices et floral 100 % naturel.
+                </p>
+                <p class="FirstBox__mobile__text">Un mixte entre des tissus entièrement bio, des boutons issus de
+                    récupération et des couleurs provenant d’épices et de fleurs 100 % naturel.
+                </p>
             </div>
-            <div class="FirstBox__button">
-                <button class="button__perso" onclick="personnaliser()">PERSONNALISER</button>
-                <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
-            </div>
+            <article class="FirstBox__imgbox__button">
+                <div class="FirstBox__imgbox">
+                    <img class="FirstBox__img" src="img/mannequin.png" alt="mannequin_porte_chemise"></img>
+                </div>
+                <div class="FirstBox__button">
+                    <button class="button__perso" onclick="personnaliser()">PERSONNALISER</button>
+                    <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
+                </div>
+            </article>
         </article>
-    </article>
-</section>
+    </section>
 
     <!-- MAIN CONTENT SECOND BOX -->
 
     <section class="SecondBox">
         <article class="SecondBox__background">
-            <div class="SecondBox__content">
-                <h2 class="SecondBox__title">Inspiré  du Maroc !</h2>
+
+            <article class="SecondBox__content">
+                <h2 class="SecondBox__title">Inspiré du Maroc !</h2>
                 <h3 class="SecondBox__subtitle">Directement importer des tanneries traditionnelles de Fès.</h3>
                 <p class="SecondBox__text">
-                    Le procédé utilisé à Fès est centenaire et artisanal, il est aussi totalement naturel et les teintures sont faites avec des épices et des plantes cela à été le déclique pour choisir cette technique pour teindre le Shatsu. Nous sommes restés un an a Fès afin de connaître le processus sur le bout des doigts afin de pouvoir l’industrialiser.
+                    Le procédé utilisé à Fès est centenaire et artisanal, il est aussi totalement naturel et les
+                    teintures sont faites avec des épices et des plantes cela à été le déclique pour choisir cette
+                    technique pour teindre le Shatsu. Nous sommes restés un an a Fès afin de connaître le processus sur
+                    le bout des doigts afin de pouvoir l’industrialiser.
                 </p>
-                <p class="SecondBox__mobile__text">Notre procédé est  importer des tanneries traditionnelles de Fès
+                <p class="SecondBox__mobile__text">Notre procédé est importer des tanneries traditionnelles de Fès
                 </p>
-            </div>
+            </article>
+
             <article class="SecondBox__imgbox__button">
                 <div class="SecondBox__imgbox">
                     <img class="SecondBox__img" src="img/teinture-fes.jpg" alt="teinture_fes"></img>
@@ -97,6 +84,7 @@
                     <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
                 </div>
             </article>
+
         </article>
     </section>
 
@@ -118,37 +106,43 @@
         </article>
     </section>
 
-    <!-- MORE ABOUT OUR PROCESSUS FIRST BOX -->
+    <!-- THIRD BOX -->
 
-    <div class="ThirdBox">
-        <div class="ThirdBox__content">
+    <section class="ThirdBox">
+        <article class="ThirdBox__content">
             <p class="ThirdBox__text">
-                Les fleurs sont une formidable source de colorants naturels ...
-
+                Depuis toujours, les fleurs ont été utilisé comme une formidable source de colorants naturels.
             </p>
-            <div class="ThirdBox__Button">
-                <button class="Button__savoir" onclick="ensavoir()">EN SAVOIR +</button>
+        </article>
+
+        <article class="ThirdBox__imgbox__button">
+            <div class="ThirdBox__imgbox">
+                <img class="ThirdBox__img" src="img/flower.png" alt="flower"></img>
             </div>
-        </div>
-        <img class="ThirdBox__img" src="./img/flower.png" alt="FlowerImg">
-    </div>
+            <div class="ThirdBox__button">
+                <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
+            </div>
+        </article>
+    </section>
 
-    <!-- MORE ABOUT OUR PROCESSUS SECOND BOX -->
+    <!-- FOURTH BOX -->
 
-    <div class="FourthBox">
-        <img class="FourthBox__img" src="./img/spice.png" alt="SpiceImg">
-        <div class="FourthBox__content">
+    <section class="FourthBox">
+        <article class="FourthBox__content">
             <p class="FourthBox__text">
-                Utilisés depuis des milliers d’années pour teindre les vêtements les épices sont de parfaits alliés pour
-                une teinture éco-responsable et durable. Elles nous offrent de magnifiques nuances de couleur dans les
-                tons chauds.
+                Utilisés depuis des milliers d’années pour teindre les vêtements les épices sont de parfaits alliés pour une teinture éco-responsable et durable. 
             </p>
-            <div class="FourthBox__Button">
-            <button class="Button__savoir" onclick="ensavoir()">EN SAVOIR +</button>
+        </article>
+
+        <article class="FourthBox__imgbox__button">
+            <div class="FourthBox__imgbox">
+                <img class="FourthBox__img" src="img/spice.png" alt="spice"></img>
             </div>
-        </div>
-        
-    </div>
+            <div class="FourthBox__button">
+                <button class="button__savoir" onclick="ensavoir()">EN SAVOIR + </button>
+            </div>
+        </article>
+    </section>
 
     <!-- FOOTER -->
 
@@ -159,8 +153,10 @@
             <a class="annexes" href=""> Livraison </a>
         </div>
         <div class="Logos__rs">
-            <a href="https://www.instagram.com/"><img class="Logos__rs Logos__instagram " src="../src/img/logo-instagram.svg"></a>
-            <a href="https://www.facebook.com/"><img class="Logos__rs Logos__facebook" src="../src/img/logo-facebook.svg"></a>
+            <a href="https://www.instagram.com/"><img class="Logos__rs Logos__instagram "
+                    src="../src/img/logo-instagram.svg"></a>
+            <a href="https://www.facebook.com/"><img class="Logos__rs Logos__facebook"
+                    src="../src/img/logo-facebook.svg"></a>
             <a href="https://twitter.com"><img class="Logos__rs Logos__twitter" src="../src/img/logo-twitter.svg"></a>
         </div>
     </footer>
