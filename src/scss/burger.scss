@@ -40,7 +40,7 @@
     display: none;
   }
   .content__menu--menuOn {
-    transform: translateX(0);
+    transform: translateX(-6000px);
     animation: transform 1;
     left: 0;
   }
