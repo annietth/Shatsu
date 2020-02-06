@@ -1,272 +1,178 @@
-
 @media (max-width: 980px) {
 
 
-body {
+  body {
+    display: flex;
+    flex-direction: column;
 
-  display: flex;
-  flex-direction: column;
+    .Header {
+      justify-content: flex-start;
 
-  .Header {
+      .Logo__title {
+        display: flex;
+        align-items: center;
+        margin: auto;
 
-    justify-content: flex-start;
+        .Title__iris {
+          font-size: 36px;
+          color: #25282D;
+          text-decoration: none;
 
-    .Logo__title {
-      display: flex;
-      align-items: center;
-      margin: auto;
-
-      .Title__iris {
-        font-size: 36px;
-        color: #25282D;
-        text-decoration: none;
-
-
-        .Logo__iris {
-          width: 40%;
+          .Logo__iris {
+            width: 40%;
+          }
         }
       }
+
+      .Header__list {
+        display: none;
+      }
     }
-    .Header__list{
-      display: none;
-    }
-  }
+
     // FIRST BOX //
 
-    .FirstBox, .SecondBox {
+    .FirstBox,
+    .SecondBox,
+    .ThirdBox,
+    .FourthBox {
       display: flex;
       background: #25282D;
       position: relative;
       height: auto;
       padding: 20px;
+      margin: 100px 0;
+    }
+
+    .FirstBox {
       margin-top: 200px;
     }
-      .FirstBox__background, .SecondBox__background {
-        display: flex;
-      }
 
-      .FirstBox__content, .SecondBox__content {
-        width: 55%;
-        display: block;
+    .FirstBox__background,
+    .SecondBox__background,
+    .ThirdBox__background,
+    .FourthBox__background {
+      display: flex;
+    }
+
+    .FirstBox__content,
+    .SecondBox__content,
+    .ThirdBox__content,
+    .FourthBox__content {
+      width: 55%;
+      display: block;
+      justify-content: center;
+      align-self: center;
+    }
+
+
+    .FirstBox__title,
+    .SecondBox__title {
+      width: fit-content;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 18px;
+    }
+
+    .FirstBox__subtitle,
+    .SecondBox__subtitle {
+      display: none;
+    }
+
+    .FirstBox__text,
+    .SecondBox__text {
+      display: none;
+    }
+
+    .ThirdBox__text,
+    .FourthBox__text {
+      width: fit-content;
+      height: auto;
+      margin-bottom: 12px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 12px;
+    }
+
+    .FirstBox__mobile__text,
+    .SecondBox__mobile__text {
+      width: fit-content;
+      height: auto;
+      margin-bottom: 12px;
+      color: $Primary-color;
+      font-family: "Lato-Regular";
+      font-size: 12px;
+    }
+
+    .FirstBox__imgbox__button,
+    .SecondBox__imgbox__button,
+    .ThirdBox__imgbox__button,
+    .FourthBox__imgbox__button {
+      display: flex;
+      flex-flow: column;
+      margin: auto;
+
+      .FirstBox__imgbox,
+      .SecondBox__imgbox,
+      .ThirdBox__imgbox,
+      .FourthBox__imgbox {
+        display: flex;
         justify-content: center;
-        align-self: center;
-      }
+        margin: 0 auto auto auto;
 
-
-      .FirstBox__title, .SecondBox__title {
-        width: fit-content;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-        color: $Primary-color;
-        font-family: "Lato-Regular";
-        font-size: 18px;
-      }
-
-      .FirstBox__subtitle, .SecondBox__subtitle {
-        display: none;
-      }
-
-      .FirstBox__text, .SecondBox__text{
-        display: none;
-      }
-
-      .FirstBox__mobile__text, .SecondBox__mobile__text {
-        width: fit-content;
-        height: auto;
-        margin-bottom: 12px;
-        color: $Primary-color;
-        font-family: "Lato-Regular";
-        font-size: 12px;
-      }
-
-      .FirstBox__imgbox__button, .SecondBox__imgbox__button {
-        display: flex;
-        flex-flow: column;
-        margin: auto;
-
-        .FirstBox__imgbox, .SecondBox__imgbox {
-
-          display: flex;
-          justify-content: center;
-          margin: 0 auto auto auto;
-  
-          .FirstBox__img, .SecondBox__img {
+        .FirstBox__img,
+        .SecondBox__img,
+        .ThirdBox__img,
+        .FourthBox__img {
           width: 70%;
           height: auto;
         }
-        }
-        
-  
-        // BUTTON FIRST BOX //
-  
-  
-        .FirstBox__button {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-top: 25px;
-  
-          .button__perso {
-            background-color: $Primary-color;
-            color: $Second-color;
-            font-size: 10px;
-            font-family: "Lato-Regular";
-            cursor: pointer;
-            border: 1px solid $Second-color;
-            width: fit-content;
-            height: auto;
-            padding: 10px;
-            transition: 0.5s;
-          }
-  
-          .button__perso:hover {
-            background-color: $Second-color;
-            border-color: $Primary-color;
-            color: $Primary-color;
-          }
-  
-          .button__savoir {
-            display: none;
-          }
-        }
-
-        .SecondBox__button {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-top: 25px;
-
-          .button__savoir {
-            background-color: $Second-color;
-            color: $Primary-color;
-            font-size: 10px;
-            font-family: "Lato-Regular";
-            cursor: pointer;
-            border: 1px solid $Primary-color;
-            width: fit-content;
-            height: auto;
-            padding: 10px;
-            transition: 0.5s;
-          }
-  
-          .button__savoir:hover {
-            background-color: $Primary-color;
-            border-color: $Second-color;
-            color: $Second-color;
-          }
-  
-          .button__perso {
-            display: none;
-          }
-        }
-      }
-      
-
-    .FirstBox::before {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 50px 100vw;
-      border-color: transparent transparent #25282d transparent;
-      position: absolute;
-      top: -50px;
-      right: 0;
-    }
-
-    .FirstBox::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 100vw 50px 0;
-      border-color: transparent #25282D transparent transparent;
-      position: absolute;
-      bottom: -50px;
-      right: 0;
-    }
-
-    .SecondBox::before {
-      content: '';
-      display: block;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 50px 100vw;
-      border-color: transparent transparent #25282D transparent;
-      position: absolute;
-      top: -50px;
-      transform: scaleX(-1);
-    }
-
-
-    .SecondBox::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 100vw 50px 0;
-      border-color: transparent #25282D transparent transparent;
-      position: absolute;
-      left: 0;
-      bottom: -50px;
-      transform: scaleX(-1);
-    }
-
-.ThirdBox, .FourthBox {
-  display: none;
-}
-
-    // SECOND BOX //
-/*
-    .SecondBox {
-      display: flex;
-      background: #25282D;
-      position: relative;
-      height: auto;
-      padding: 20px;
-      margin-top: 200px;
-
-      .SecondBox__content {
-        width: 55%;
-        display: block;
-        justify-content: center;
-        align-self: center;
-        margin: auto;
       }
 
-      .SecondBox__subtitle {
-        margin-bottom: 25px;
-        color: $Primary-color;
-        font-family: "Lato-Regular";
-        font-size: 24px;
-      }
 
-      .SecondBox__text {
-        width: 60%;
-        height: 25%;
-        margin-bottom: 25px;
-        color: $Primary-color;
-        font-family: "Lato-Regular";
-        font-size: 18px;
-      }
+      // BUTTON FIRST BOX //
 
-      .SecondBox__img {
-        width: 40%;
-        height: 100%;
-      }
-
-      .SecondBox__Button {
-        width: 75%;
+      .FirstBox__button {
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        margin-top: 25px;
 
-        .Button__savoir {
+        .button__perso {
+          background-color: $Primary-color;
+          color: $Second-color;
+          font-size: 10px;
+          font-family: "Lato-Regular";
+          cursor: pointer;
+          border: 1px solid $Second-color;
+          width: fit-content;
+          height: auto;
+          padding: 10px;
+          transition: 0.5s;
+        }
+
+        .button__perso:hover {
+          background-color: $Second-color;
+          border-color: $Primary-color;
+          color: $Primary-color;
+        }
+
+        .button__savoir {
+          display: none;
+        }
+      }
+
+      .SecondBox__button,
+      .ThirdBox__button,
+      .FourthBox__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+
+        .button__savoir {
           background-color: $Second-color;
           color: $Primary-color;
           font-size: 10px;
@@ -279,16 +185,49 @@ body {
           transition: 0.5s;
         }
 
-        .Button__savoir:hover {
+        .button__savoir:hover {
           background-color: $Primary-color;
           border-color: $Second-color;
           color: $Second-color;
+        }
+
+        .button__perso {
+          display: none;
         }
       }
     }
 
 
-    .SecondBox::before {
+    .FirstBox::before,
+    .ThirdBox::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 50px 100vw;
+      border-color: transparent transparent #25282d transparent;
+      position: absolute;
+      top: -50px;
+      right: 0;
+    }
+
+    .FirstBox::after,
+    .ThirdBox::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100vw 50px 0;
+      border-color: transparent #25282D transparent transparent;
+      position: absolute;
+      bottom: -50px;
+      right: 0;
+    }
+
+    .SecondBox::before,
+    .FourthBox::before {
       content: '';
       display: block;
       left: 0;
@@ -302,8 +241,8 @@ body {
       transform: scaleX(-1);
     }
 
-
-    .SecondBox::after {
+    .SecondBox::after,
+    .FourthBox::after {
       content: '';
       display: block;
       width: 0;
@@ -315,7 +254,7 @@ body {
       left: 0;
       bottom: -50px;
       transform: scaleX(-1);
-    }*/
+    }
 
     // SIGNE ECO-RESPONSABLE //
 
@@ -348,177 +287,7 @@ body {
         margin: auto;
       }
     }
-/*
-    // THIRD BOX //
 
-    .ThirdBox {
-
-      display: flex;
-      background: #25282D;
-      position: relative;
-      padding: 20px;
-      margin-top: 150px;
-      height: auto;
-
-      .ThirdBox__content {
-        width: 55%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-self: center;
-        margin: auto;
-      }
-
-      .ThirdBox__text {
-        font-family: "Tasadith-Bold";
-        color: $Primary-color;
-        font-size: 18px;
-        width: 65%;
-        margin-bottom: 50px;
-      }
-
-      .ThirdBox__img {
-        width: 40%;
-        height: 100%;
-      }
-
-      .ThirdBox__Button {
-        width: 75%;
-        display: flex;
-        justify-content: flex-end;
-
-        .Button__savoir {
-          background-color: $Second-color;
-          font-size: 16px;
-          font-family: "Lato-Regular";
-          color: $Primary-color;
-          cursor: pointer;
-          border: 1px solid $Primary-color;
-          width: 150px;
-          height: 50px;
-        }
-
-        .Button__savoir:hover {
-          background-color: $Primary-color;
-          border-color: $Second-color;
-          color: $Second-color;
-        }
-      }
-    }
-
-    .ThirdBox::before {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 50px 100vw;
-      border-color: transparent transparent #25282D transparent;
-      position: absolute;
-      top: -50px;
-      right: 0;
-    }
-
-    .ThirdBox::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 100vw 50px 0;
-      border-color: transparent #25282D transparent transparent;
-      position: absolute;
-      bottom: -50px;
-      right: 0;
-    }
-
-    // FOURTH BOX // 
-
-    .FourthBox {
-
-      display: flex;
-      background: #25282D;
-      position: relative;
-      padding: 20px;
-      margin: 150px 0;
-      height: auto;
-
-      .FourthBox__content {
-        width: 55%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-self: center;
-        margin: auto;
-      }
-
-      .FourthBox__text {
-        font-family: "Tasadith-Bold";
-        color: $Primary-color;
-        font-size: 18px;
-        width: 65%;
-        margin-bottom: 50px;
-      }
-
-      .FourthBox__img {
-        width: 40%;
-        height: 100%;
-      }
-
-      .FourthBox__Button {
-        width: 75%;
-        display: flex;
-        justify-content: flex-end;
-
-        .Button__savoir {
-          background-color: $Second-color;
-          font-size: 16px;
-          font-family: "Lato-Regular";
-          color: $Primary-color;
-          cursor: pointer;
-          border: 1px solid $Primary-color;
-          width: 150px;
-          height: 50px;
-        }
-
-        .Button__savoir:hover {
-          background-color: $Primary-color;
-          border-color: $Second-color;
-          color: $Second-color;
-        }
-      }
-    }
-
-
-    .FourthBox::before {
-      content: '';
-      display: block;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 50px 100vw;
-      border-color: transparent transparent #25282D transparent;
-      position: absolute;
-      top: -50px;
-      transform: scaleX(-1);
-    }
-
-    .FourthBox::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 100vw 50px 0;
-      border-color: transparent #25282D transparent transparent;
-      position: absolute;
-      left: 0;
-      bottom: -50px;
-      transform: scaleX(-1);
-    }
-  }
-  */
     // FOOTER //
 
     .Footer {
@@ -552,7 +321,7 @@ body {
     }
   }
 }
-/*
+
 // DESKTOP //
 
 @media (min-width: 981px) {
@@ -664,7 +433,7 @@ body {
       // BUTTON FIRST BOX //
 
 
-      .FirstBox__Button {
+      .FirstBox__button {
         width: 75%;
         display: flex;
         justify-content: space-between;
@@ -780,12 +549,12 @@ body {
         height: 100%;
       }
 
-      .SecondBox__Button {
+      .SecondBox__button {
         width: 75%;
         display: flex;
         justify-content: flex-end;
 
-        .Button__savoir {
+        .button__savoir {
           background-color: $Second-color;
           font-size: 16px;
           font-family: "Lato-Regular";
@@ -797,7 +566,7 @@ body {
 
         }
 
-        .Button__savoir:hover {
+        .button__savoir:hover {
           background-color: $Primary-color;
           border-color: $Second-color;
           color: $Second-color;
@@ -900,12 +669,12 @@ body {
         height: 100%;
       }
 
-      .ThirdBox__Button {
+      .ThirdBox__button {
         width: 75%;
         display: flex;
         justify-content: flex-end;
 
-        .Button__savoir {
+        .button__savoir {
           background-color: $Second-color;
           font-size: 16px;
           font-family: "Lato-Regular";
@@ -916,7 +685,7 @@ body {
           height: 50px;
         }
 
-        .Button__savoir:hover {
+        .button__savoir:hover {
           background-color: $Primary-color;
           border-color: $Second-color;
           color: $Second-color;
@@ -950,7 +719,7 @@ body {
       right: 0;
     }
 
-    .Button__savoir {
+    .button__savoir {
       background-color: $Second-color;
       font-size: 16px;
       font-family: "Lato-Regular";
@@ -961,7 +730,7 @@ body {
       height: 50px;
     }
 
-    .Button__savoir:hover {
+    .button__savoir:hover {
       background-color: $Primary-color;
       border-color: $Second-color;
       color: $Second-color;
@@ -1001,12 +770,12 @@ body {
         height: 100%;
       }
 
-      .FourthBox__Button {
+      .FourthBox__button {
         width: 75%;
         display: flex;
         justify-content: flex-end;
 
-        .Button__savoir {
+        .button__savoir {
           background-color: $Second-color;
           font-size: 16px;
           font-family: "Lato-Regular";
@@ -1017,7 +786,7 @@ body {
           height: 50px;
         }
 
-        .Button__savoir:hover {
+        .button__savoir:hover {
           background-color: $Primary-color;
           border-color: $Second-color;
           color: $Second-color;
@@ -1087,4 +856,3 @@ body {
     }
   }
 }
-*/
