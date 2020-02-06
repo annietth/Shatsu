@@ -3,8 +3,10 @@ $Second-color : #25282D;
 $Text-color :#DFAF2C;
 
 @mixin phone-only {
-    @media (max-width: 375px) { @content; }
-  }
+    @media (max-width: 375px) {
+        @content;
+    }
+}
 
 @font-face {
     font-family: "Lato-Bold";

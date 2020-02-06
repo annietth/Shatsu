@@ -1,3 +1,52 @@
+@media (min-width: 981px) {
+  body {
+    background: $Primary-color;
+
+    // HEADER //
+
+    .Header {
+      background: $Primary-color;
+      font-family: "Tasadith-Bold";
+      position: fixed;
+      justify-content: center;
+      width: 100%;
+      height: 92px;
+      left: 0;
+      top: 0;
+      display: flex;
+      margin: auto;
+      z-index: 1;
+    }
+
+    .Logo__title {
+      display: flex;
+      align-items: center;
+
+      .Title__iris {
+        font-size: 36px;
+        color: #25282D;
+        text-decoration: none;
+
+
+        .Logo__iris {
+          width: 40%;
+        }
+      }
+    }
+
+    .Header__list {
+      text-decoration: none;
+      display: flex;
+      margin: 50px 0 auto 50px;
+      flex-direction: row;
+    }
+
+    .Header__link {
+      text-decoration: none;
+      color: #25282d;
+      margin-right: 50px;
+    }
+  }
 :root {
   --main-bg-color: white;
   --second-bg-color: white;
@@ -218,6 +267,7 @@
   background-color: purple;
   width: 63px;
   height: 20px;
+}
 }
 
 @media screen and (min-width: 758px) {
